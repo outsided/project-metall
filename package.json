@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "prettier:fix": "prettier --write \"**/*.{jsx,tsx}\"",
     "stylelint": "stylelint **/*.scss",
-    "stylelint:fix": "stylelint stylelint **/*.scss --fix"
+    "stylelint:fix": "stylelint stylelint **/*.scss --fix",
+    "prepare": "husky"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.1",
