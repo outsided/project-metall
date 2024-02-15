@@ -8,6 +8,7 @@ export const RouterProvider = () => {
 			<Routes>
 				{routes.map(({ Page, path }) => (
 					<Route
+						key={path}
 						path={path}
 						element={<Page />}
 					/>
