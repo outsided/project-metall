@@ -1,1 +1,1 @@
-delete this file after the apk is not empty
+delete this file if folder is not empty
