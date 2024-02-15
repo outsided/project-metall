@@ -1,4 +1,0 @@
-{
-    ".scss": "yarn stylelint",
-    ".{js,jsx,ts,tsx}": "yarn lint"
-}
