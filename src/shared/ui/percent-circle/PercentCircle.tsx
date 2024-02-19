@@ -7,10 +7,12 @@ import cl from './PercentCircle.module.scss'
 
 export const PercentCircle = ({
 	percent,
-	children
+	children,
+	className
 }: {
 	percent: string
 	children?: ReactNode
+	className: string
 }) => {
 	const checkedPercent = +percent > 100 ? '100' : percent
 
@@ -20,7 +22,9 @@ export const PercentCircle = ({
 				backgroundImage: `conic-gradient(at center, #1AD3D3 ${checkedPercent}%, #e4e6e8 0)`
 			}}
 			className={
-				children ? classNames(cl.root, cl.root_children) : cl.root
+				children
+					? classNames(cl.root, cl.root_children, className ?? '')
+					: cl.root
 			}>
 			<div
 				className={
