@@ -7,28 +7,28 @@
 
     &__user__profile_image {
         width: 50px;
-        height: auto;
+        height: 50px;
         border-radius: 50%;
     }
 
-    &__notification_info {
-        display: flex;
-        flex-direction: column;
-        row-gap: 33px;
-    }
-
     &__notification_header {
+        margin-bottom: 33px;
         color: #1B0A29;
         font-size: 16px;
         line-height: 24px;
     }
 
     &__user_name {
+        float: left;
+        margin-right: 4px;
         font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
     }
     
     &__notification_description {
         font-weight: 400;
+        font-size: 16px;
     }
 
     &__notification_date {
