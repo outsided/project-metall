@@ -52,3 +52,8 @@ export const Search: Story = {
 		name: 'Search'
 	}
 }
+export const Done: Story = {
+	args: {
+		name: "Done"
+	}
+}
