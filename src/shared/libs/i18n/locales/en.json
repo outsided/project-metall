@@ -3,6 +3,9 @@
         "course-data": "Course Data",
         "all-lessons": "All lessons",
         "uploaded-lessons": "Uploaded lessons",
-        "teacher": "Teacher"
+        "teacher": "Teacher",
+        "class": "Class",
+        "homework": "Homework",
+        "online-meeting": "Online meeting"
     }
 }

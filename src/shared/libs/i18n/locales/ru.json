@@ -3,6 +3,9 @@
         "course-data": "Информация о курсе",
         "all-lessons": "Все уроки",
         "uploaded-lessons": "Загруженные уроки",
-        "teacher": "Учитель"
+        "teacher": "Учитель",
+        "class": "Класс",
+        "homework": "Домашнее задание",
+        "online-meeting": "Онлайн встреча"
     }
 }
