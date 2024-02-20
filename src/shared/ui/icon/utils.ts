@@ -4,6 +4,7 @@
 import Add from '@/shared/assets/icons/add.svg?react'
 import Arrow from '@/shared/assets/icons/arrow.svg?react'
 import Done from '@/shared/assets/icons/done.svg?react';
+import Course from '@/shared/assets/icons/course-icon.svg?react'
 import Edit from '@/shared/assets/icons/edit.svg?react'
 import Notification from '@/shared/assets/icons/notifications.svg?react'
 import Search from '@/shared/assets/icons/search.svg?react'
@@ -16,7 +17,8 @@ const icons = {
 	Edit,
 	Arrow,
 	Search,
-	Done
+	Done,
+	Course
 }
 
 export type IconName = keyof typeof icons
