@@ -3,6 +3,8 @@
         "course-data": "Информация о курсе",
         "all-lessons": "Все уроки",
         "uploaded-lessons": "Загруженные уроки",
-        "teacher": "Учитель"
+        "teacher": "Учитель",
+        "search-course": "Найти курс"
+
     }
 }
