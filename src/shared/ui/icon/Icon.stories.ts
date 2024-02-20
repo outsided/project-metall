@@ -52,3 +52,8 @@ export const Search: Story = {
 		name: 'Search'
 	}
 }
+export const Course: Story = {
+	args: {
+		name: 'Course'
+	}
+}
