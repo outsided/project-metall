@@ -4,7 +4,7 @@ import { type CSSProperties } from 'react'
 import { classNames } from '@/shared/libs/classNames'
 
 import cl from './icon.module.scss'
-import { type IconName, getIcon} from './utils'
+import { type IconName, getIcon } from './utils'
 
 interface IconProps {
 	name: IconName
@@ -13,6 +13,7 @@ interface IconProps {
 }
 export const Icon = ({ name, className, style }: IconProps) => {
 	const Svg = getIcon(name)
+
 	return (
 		<Svg
 			style={style}
