@@ -6,7 +6,7 @@ import cl from './CourseIcon.module.scss'
 export const CourseIcon = ({className, color, name }: {className:string, color: string, name: IconName}) => {
   return (
     <div style={{ backgroundColor: color }} className={classNames(cl.icon, className)}>
-      <Icon name={name} />
+      <Icon name={name} className={cl.icon} />
     </div>
   )
 }
