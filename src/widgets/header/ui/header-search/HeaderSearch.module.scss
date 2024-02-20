@@ -1,0 +1,22 @@
+.root{
+    display: flex;
+    align-items: center;
+    width: 380px;
+    padding: 12px 0 12px 20px;
+    column-gap: 10px;
+    border-radius: 10px;
+
+    &__input{
+        color: #1B0A29;
+        font-weight: 700;
+        font-size: 16px;
+        font-family: 'Nunito Sans', sans-serif;
+
+        &::placeholder{
+            color: #D8D8D8;
+            font-weight: 400;
+            font-size: 16px;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+    }
+}
