@@ -1,2 +1,2 @@
 export { Typography } from './typography';
-export { type IconName } from './icon';
+export { type IconName, Icon } from './icon';
