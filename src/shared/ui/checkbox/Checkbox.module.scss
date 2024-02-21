@@ -1,0 +1,19 @@
+.root{
+    padding: 2px;
+
+    &__checkbox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        border: #1B0A29 solid 2px;
+        border-radius: 4px;
+        cursor: pointer;
+        
+    }
+
+        &__icon{
+            padding-bottom: 3px;
+        }
+}
