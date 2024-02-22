@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { DropdownFilter } from './DropdownFilter'
+import { Dropdown } from './Dropdown'
 
-const meta: Meta<typeof DropdownFilter> = {
-	component: DropdownFilter,
-	title: 'shared/DropdownFilter',
+const meta: Meta<typeof Dropdown> = {
+	component: Dropdown,
+	title: 'shared/Dropdown',
 	tags: ['autodocs'],
 	argTypes: {
 		options: {
@@ -22,7 +22,7 @@ const meta: Meta<typeof DropdownFilter> = {
 
 export default meta
 
-type Story = StoryObj<typeof DropdownFilter> 
+type Story = StoryObj<typeof Dropdown> 
 
 export const Default: Story = { 
 	args: {

@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { Icon, Typography } from '@/shared'
-import cl from './DropdownFilter.module.scss'
+import cl from './Dropdown.module.scss'
 import { DropdownOption } from './types'
 
 const { Text } = Typography 
 
-export const DropdownFilter = ({
+export const Dropdown = ({
 	activeValue,
 	setActiveValue,
 	options
