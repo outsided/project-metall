@@ -8,29 +8,26 @@ const meta = {
 	parameters: {
 		layout: 'centered'
 	},
-    tags: ['autodocs'],
-    argTypes: {
+	tags: ['autodocs'],
+	argTypes: {
 		checked: {
 			type: 'boolean',
 			description: 'checkbox by default'
 		}
-    }
-	
+	}
 } satisfies Meta<typeof Checkbox>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
-    
 	args: {
-        checked: false,
+		checked: false
 	}
 }
 
 export const Checked: Story = {
-    
 	args: {
-        checked: true,
+		checked: true
 	}
 }
