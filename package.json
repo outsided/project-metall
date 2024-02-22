@@ -1,0 +1,40 @@
+{
+  "name": "project-metall",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "prettier:fix": "prettier --write \"**/*.{jsx,tsx}\"",
+    "lint": "next lint",
+    "stylelint": "stylelint **/*.scss",
+    "stylelint:fix": "stylelint stylelint **/*.scss --fix"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.1",
+    "axios": "^1.6.7",
+    "next": "14.1.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-redux": "^9.1.0"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "sass": "^1.71.1",
+    "stylelint": "^16.2.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard-scss": "^13.0.0",
+    "stylelint-order": "^6.0.4",
+    "typescript": "^5"
+  }
+}
