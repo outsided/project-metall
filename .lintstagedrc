@@ -1,4 +1,4 @@
 {
-    "*.scss": "yarn stylelint",
-    "*.{js,jsx,ts,tsx}": "yarn lint"
+    "*.scss": "npm run stylelint",
+    "*.{js,jsx,ts,tsx}": "npm run lint"
 }
