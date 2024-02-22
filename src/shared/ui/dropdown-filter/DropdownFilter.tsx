@@ -1,36 +1,26 @@
 import { useState } from 'react'
 import { Icon, Typography } from '@/shared'
 import cl from './DropdownFilter.module.scss'
+import { DropdownOption } from './types'
 
-const { Text } = Typography
+const { Text } = Typography 
 
-type OptionValues = 'deffered_courses' | 'completed_courses' | 'current_courses'
-
-type TDropdownFilter = {
-	title: string
-	value: OptionValues
-}
-
-const selectOptions = {
-	current_courses: 'Current Courses',
-	deffered_courses: 'Deferred Courses',
-	completed_courses: 'Completed Courses'
-} as const
-
-const courseStatusOptions: TDropdownFilter[] = [
-	{ title: 'Current Courses', value: 'current_courses' },
-	{ title: 'Deferred Courses', value: 'deffered_courses' },
-	{ title: 'Completed Courses', value: 'completed_courses' }
-]
-
-export const DropdownFilter = () => {
-	const [value, setValue] = useState<OptionValues>()
+export const DropdownFilter = ({
+	activeValue,
+	setActiveValue,
+	options
+}: {
+	activeValue?: DropdownOption
+	// eslint-disable-next-line no-unused-vars
+	setActiveValue: (value: DropdownOption) => void
+	options: DropdownOption[]
+}) => {
 	const [isOpen, setIsOpen] = useState(false)
-
-	const handleSelect = (value: OptionValues) => {
-		setValue(value)
+	
+	const handleSelect = (value: DropdownOption) => {
+		setActiveValue(value)
 		setIsOpen(false)
-	} 
+	}
 
 	return (
 		<div className={cl.root}>
@@ -41,9 +31,7 @@ export const DropdownFilter = () => {
 					className={`${isOpen && cl.root__select_default_open} ${cl.root__option_text} ${cl.root__select_default}`}>
 					<div>
 						<Text
-							text={
-								value ? selectOptions[value] : 'Current Courses'
-							}
+							text={activeValue?.title ?? ''}
 							className={cl.root__option_text}
 						/>
 					</div>
@@ -55,10 +43,11 @@ export const DropdownFilter = () => {
 
 			{isOpen ? (
 				<ul className={cl.root__dropdown_options}>
-					{courseStatusOptions.map(option => (
+					{options.map(option => (
 						<li
+							key={option.title}
 							className={cl.root__select_option}
-							onClick={() => handleSelect(option.value)}>
+							onClick={() => handleSelect(option)}>
 							<Text
 								text={option.title}
 								className={cl.root__option_text}
