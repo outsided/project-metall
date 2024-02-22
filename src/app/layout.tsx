@@ -1,19 +1,21 @@
-import { createMetadata } from "@/utils/metadata";
-
+import { AppProvider } from '@/components/providers'
 import '@/styles/index.scss'
+import { createMetadata } from '@/utils/metadata'
 
-export const metadata = createMetadata("Metall", "Metall")
+export const metadata = createMetadata('Metall', 'Metall')
 
 export default function RootLayout({
-  children,
+	children
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode
 }>) {
-  return (
-    <html lang="en">
-      <body >
-        <main>{children}</main>
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<body>
+				<AppProvider>
+					<main>{children}</main>
+				</AppProvider>
+			</body>
+		</html>
+	)
 }
