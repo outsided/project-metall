@@ -3,6 +3,7 @@
 /* eslint-disable import/no-internal-modules */
 import Add from '@/shared/assets/icons/add.svg?react'
 import Arrow from '@/shared/assets/icons/arrow.svg?react'
+import Chevron from '@/shared/assets/icons/chevron.svg?react'
 import Course from '@/shared/assets/icons/course-icon.svg?react'
 import Done from '@/shared/assets/icons/done.svg?react'
 import Edit from '@/shared/assets/icons/edit.svg?react'
@@ -15,10 +16,11 @@ const icons = {
 	Notification,
 	Add,
 	Edit,
-	Arrow,
+	Chevron,
 	Search,
 	Done,
-	Course
+	Course,
+	Arrow
 }
 
 export type IconName = keyof typeof icons
