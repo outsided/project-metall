@@ -4,6 +4,7 @@
 import Add from '@/shared/assets/icons/add.svg?react'
 import Arrow from '@/shared/assets/icons/arrow.svg?react'
 import Calendar from '@/shared/assets/icons/calendar.svg?react'
+import Chevron from '@/shared/assets/icons/chevron.svg?react'
 import Course from '@/shared/assets/icons/course-icon.svg?react'
 import Courses from '@/shared/assets/icons/courses.svg?react'
 import Dashboard from '@/shared/assets/icons/dashboard.svg?react'
@@ -22,7 +23,7 @@ const icons = {
 	Notification,
 	Add,
 	Edit,
-	Arrow,
+	Chevron,
 	Search,
 	Done,
 	Course,
@@ -32,7 +33,8 @@ const icons = {
 	Teachers,
 	Messenger,
 	InfoPortal,
-	Logout
+	Logout,
+	Arrow
 }
 
 export type IconName = keyof typeof icons

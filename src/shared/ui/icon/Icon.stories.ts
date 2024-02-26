@@ -90,5 +90,10 @@ export const Logout: Story = {
 export const InfoPortal: Story = {
 	args: {
 		name: 'InfoPortal'
+  }
+}
+export const Chevron: Story = {
+	args: {
+		name: 'Chevron'
 	}
 }
