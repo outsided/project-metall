@@ -1,11 +1,11 @@
 .w{
     display: flex;
+    width: 1920px;
     margin-left: 150px;
 }
 .card {
-    min-width: 488px;
+    width: 488px;
     height: 274px;
-    border:1px solid grey;
     display: flex;
     justify-content: center;
     border-radius: 10px;
