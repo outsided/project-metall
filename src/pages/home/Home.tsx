@@ -1,3 +1,6 @@
+import Typography from '@/components/Typography'
 export const HomePage = () => {
-	return <></>
+	return <>
+	<Typography/>
+	</>
 }

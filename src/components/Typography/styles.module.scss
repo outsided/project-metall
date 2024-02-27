@@ -1,0 +1,59 @@
+.wrapper{
+    max-width: 1751px;
+
+    .comp_typography{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 150px;
+        .h3_first{
+            font-size: 27px;
+            font-weight: 800;
+            margin-bottom: 42px;
+            font-family: sans-serif;
+        }
+        .discription{
+            max-width: 1069px;
+            font-weight: 400;
+            font-size: 32px;
+            font-family: sans-serif;
+        }
+        .h3_seccond{
+            margin: 93px 0px 93px 840px;
+            font-family: sans-serif;
+            font-size: 27px;
+            font-weight: 800;
+        }
+        .chuse_uss{
+            width: 1413px;
+            .map{
+                display:flex;
+                gap:65px;
+            }
+            .typography_card{
+                display:flex;
+                flex-direction: column;
+                width:320px;
+                align-items: center;
+                gap:20px;
+    
+                .h5_card{
+                    color:#F4C024;
+                    font-family: sans-serif;   
+                    font-weight: 700;
+                    font-size: large;
+                    }    
+                .p_card{
+                    width: 240px;
+                    text-align: center;
+                    font-family: sans-serif;
+                    font-size: large;
+                    font-weight: 400;
+                }
+        }
+        
+        
+    }
+
+}
+
+}
