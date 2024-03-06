@@ -1,0 +1,1 @@
+export {TestRedax} from './Testredax'

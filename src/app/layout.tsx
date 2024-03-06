@@ -3,7 +3,7 @@ import '@/styles/index.scss'
 import { createMetadata } from '@/utils/metadata'
 
 export const metadata = createMetadata('Metall', 'Metall')
-
+import {store} from '@/store/store'
 export default function RootLayout({
 	children
 }: Readonly<{
@@ -12,7 +12,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body>
-				<AppProvider>
+				<AppProvider store={store}>
 					<main>{children}</main>
 				</AppProvider>
 			</body>
