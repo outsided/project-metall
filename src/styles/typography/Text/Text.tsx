@@ -21,15 +21,15 @@ type Tprors = {
 }
 export const Text = (
     {
-        className,
+        className = '',
         text,
         color,
-        variant,
+        variant = 'p20',
 
     }:Tprors
 ) => {
     return (
-        <p className={classNames(variantMap[variant],colorMap[color], className ?? '')}>
+        <p className={classNames(variantMap[variant],colorMap[color], className)}>
                     {text}
         </p>
     )
