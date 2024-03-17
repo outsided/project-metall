@@ -16,8 +16,11 @@ const todoSlice = createSlice({
     name: 'todo',
     initialState,
     reducers: {
-        addTodo(state){
-           console.log(state,2312)
+        addTodo(state,action){
+           console.log(2312)
+        },
+        removeCard(state,action){
+            console.log('remove')
         },
     }
 });

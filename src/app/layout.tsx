@@ -1,21 +1,20 @@
-import { AppProvider } from '@/components/providers'
+import { Provider } from 'react-redux'
 import '@/styles/index.scss'
 import { createMetadata } from '@/utils/metadata'
-
+import { store } from '@/store/store'
 export const metadata = createMetadata('Metall', 'Metall')
-import {store} from '@/store/store'
 export default function RootLayout({
 	children
 }: Readonly<{
 	children: React.ReactNode
 }>) {
 	return (
-		<html lang="en">
-			<body>
-				<AppProvider store={store}>
+		<Provider store={store}>
+			<html lang="en">
+				<body>
 					<main>{children}</main>
-				</AppProvider>
-			</body>
-		</html>
-	)
+				</body>
+			</html>
+		</Provider>
+		)
 }
