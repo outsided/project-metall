@@ -1,5 +1,9 @@
+import { AppProvider } from "@/components/providers"
 import { HomePage } from "@/pages/home"
 
 export default function Home(){
-  return <HomePage/>
+  return (<AppProvider >
+         <HomePage/>
+    </AppProvider>
+  )
 }

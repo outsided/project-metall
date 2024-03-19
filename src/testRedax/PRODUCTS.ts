@@ -40,7 +40,6 @@ export const PRODUCTS: Products = [
         img: 'вфыв',
         title: 'Название',
         quantity: 1,
-
     },
     {
         id:3,

@@ -1,29 +1,40 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { PRODUCTS } from "@/testRedax/PRODUCTS";
 
-type Todo = {
-    id:number,
-    text:string,
+type TProductsState={
+    products:TProducts,
+    basket: TProducts
 }
-type todoState={
-    todo:Todo[]
-
+const p = {
+    id:2
 }
+const {id} = p
+type TProduct = {
+        id: number,
+        price: number,
+        img: string,
+        title:string,
+        quantity: number,
+    }
+type TProducts = TProduct[]
 
-const initialState:todoState = {
-    todo:[]
+const initialState:TProductsState = {
+    products:PRODUCTS,
+    basket:[],
 } 
 const todoSlice = createSlice({
-    name: 'todo',
+    name: 'products',
     initialState,
     reducers: {
-        addTodo(state,action){
-           console.log(2312)
+        addToBasket(state,action:PayloadAction<TProduct>){
+            
+           state.basket.push(action.payload)
         },
-        removeCard(state,action){
-            console.log('remove')
+        removeFromBasket(state,action:PayloadAction<number>){
+            state.basket = state.basket.filter(({id}) => id !== action.payload)
         },
     }
 });
 
-export const {addTodo} = todoSlice.actions;
-export default todoSlice.reducer;
+export const {addToBasket,removeFromBasket} = todoSlice.actions;
+export const todo = todoSlice.reducer;
